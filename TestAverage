@@ -1,0 +1,28 @@
+/*-------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Lab 1
+// SPECIFICATION: program that will read 3 test scores and calculate average for my friend Jenny
+// FOR: CSE 110- Lab #1
+// TIME SPENT: how long it took you to complete the assignment
+//-----------------------------------------------------------*/
+import java.util.Scanner;
+
+public class TestAverage {
+  public static void main(String[] args) {
+    int test1, test2, test3;
+    double average;
+    
+    final int NUM_TESTS=3;
+    
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter the score on the first test: "); //prompt
+    test1 = input.nextInt();
+    System.out.print("Enter the score on the second test: "); //prompt
+    test2 = input.nextInt();
+    System.out.print("Enter the score on the third test: "); //prompt
+    test3 = input.nextInt();
+    
+    average = (test1 + test2 + test3) / (double) NUM_TESTS;
+    System.out.println("Your average test score is: " + average + " keep up the good work!");
+    }
+}
