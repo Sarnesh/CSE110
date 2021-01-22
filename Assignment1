@@ -1,0 +1,81 @@
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Assingment1.java
+// SPECIFICATION: Answers for a-j on Expressions.java
+// FOR: CSE 110 - Assignment #1
+//a: 15
+//b: 16
+//c: 16
+//d: 2
+//e: 3
+//f: 33
+//g: 0
+//h: 15.0
+//i: 225.0
+//j: 16
+//-----------------------------------------------------------*/
+
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Assignment1.java
+// SPECIFICATION: Takes name of olympic athlete, and throw distance in meters returns throw data in yards, feet, inches, and centimeters
+// FOR: CSE 110 - Javelin Throw - Assingment #1
+// TIME SPENT: 45 minutes
+//-----------------------------------------------------------*/
+import java.util.Scanner;
+public class Assignment1 {
+    public static void main(String[] args) {
+       String Name = " ";
+       double throw1, throw2, throw3;
+       double yard1, yard2, yard3;
+       double feet1, feet2, feet3;
+       double inches1, inches2, inches3;
+       double Cm1, Cm2, Cm3;
+       Scanner scan = new Scanner(System.in);
+        
+       System.out.print("What is your name: ");
+       Name = scan.nextLine();
+       
+       System.out.println("Olympic Javelin Throw");
+       System.out.println("Enter the distances, in meters, for " + " " + Name);
+       
+       System.out.print("Please enter the distance for throw 1: ");
+       throw1 = scan.nextDouble();
+       System.out.print("Please enter the distance for throw 2: ");
+       throw2 = scan.nextDouble();
+       System.out.print("Please enter the distance for throw 3: ");
+       throw3 = scan.nextDouble();
+       
+       System.out.println("Yards");
+       yard1 = throw1 * 1.093;
+       System.out.println(yard1);
+       yard2 = throw2 * 1.093;
+       System.out.println(yard2);
+       yard3 = throw3 * 1.093;
+       System.out.println(yard3);
+       
+       System.out.println("Feet");
+       feet1 = yard1 *3;
+       System.out.println(feet1);
+       feet2 = yard2 *3;
+       System.out.println(feet2);
+       feet3 = yard3 *3;
+       System.out.println(feet3);
+       
+       System.out.println("Inches");
+       inches1 = feet1 * 12;
+       System.out.println(inches1);
+       inches2 = feet2 * 12;
+       System.out.println(inches2);
+       inches3 = feet3 * 12;
+       System.out.println(inches3);
+       
+       System.out.println("Cm");
+       Cm1 = throw1 * 100;
+       System.out.println(Cm1);
+       Cm2 = throw2 * 100;
+       System.out.println(Cm2);
+       Cm3 = throw3 * 100;
+       System.out.println(Cm3);     
+    }    
+}
