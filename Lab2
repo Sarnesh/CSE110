@@ -1,0 +1,56 @@
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Lab3.java
+// SPECIFICATION: Take a homework, midterm, and final grade to assess whether or not a student passed a class
+// FOR: CSE 110 - Lab #3
+// TIME SPENT: 40 minutes
+//-----------------------------------------------------------*/
+import java.util.Scanner;
+public class Lab3 {
+    public static void main(String[] args) {
+       double homework = 0, midtermexam, finalexam = 0; //declares all variables
+       double weightedscore = 0;
+       int i = 0;
+       Scanner scan = new Scanner(System.in);
+       
+       while (i==0 || i==1 || i==2){
+           if (i == 0){ //if loop for homework
+             System.out.print("Enter your HOMEWORK grade: ");
+             homework = scan.nextDouble();
+             if(homework<0 || homework>100){                
+             System.out.println("[ERR] Invalid input. A homework grade should be in between [0, 100].");
+             } else {
+               i++;
+             }
+           
+                } if (i == 1) { //if loop for midterms
+                    System.out.print("Enter your MIDTERM EXAM grade: ");
+                    midtermexam = scan.nextDouble();
+                    if(midtermexam<0 || midtermexam>100){    
+                    System.out.println("[ERR] Invalid input. A midterm exam grade should be in between [0, 100].");
+                    } else {
+                      i++;
+                    }
+                    
+                       if (i == 2) {   //if loop for finals    
+                       System.out.print("Enter your FINAL EXAM grade: ");
+                       finalexam = scan.nextInt();
+                       if(finalexam<0 || finalexam>200){     
+                       System.out.println("[ERR] Invalid input. A final exam grade should be in between [0, 200].");
+                       } else {
+                       i++;
+                       }
+                     }
+              
+                  weightedscore = (finalexam/200*50) + (midtermexam*0.25) + (homework*0.25); //calculates weighted score
+                  System.out.println("[INFO] Student's weighted total is " + weightedscore);//prints weighted score
+                  if(weightedscore >= 50) { // displays whether or not student passed
+                          
+                      System.out.println("[INFO] Student PASSED the class");
+                  } else {
+                      System.out.println("[INFO] Student FAILED the class");
+                               }
+            }
+        }
+    }
+}
