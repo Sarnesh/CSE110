@@ -1,2 +1,2 @@
-# CSE110
-Class work
+# Java
+Class work - CSE110
