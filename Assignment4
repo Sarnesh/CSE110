@@ -1,0 +1,55 @@
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Assignment4.java
+// LAB: Tuesday @3PM
+// SPECIFICATION: Part 2: Programming, checks if numbers are prime then adds,
+// subtracts, counts, does a summation, and returns an average of numbers.
+// FOR: CSE 110 - Assignment #4
+// TIME SPENT: 35 minutes
+//-----------------------------------------------------------*/
+import java.util.Scanner;
+public class Assignment4 {
+    public static void main(String[] args) {
+        int answer;
+        int maximum = 0, minimum = 9999999;//for math.max and math.min functions
+        double total = 0,count = 0, average = 0;//use double for average
+        int checkprime = 1;               
+        Scanner scan = new Scanner(System.in);
+        
+        do{  //keep program running until -1 is typed
+        System.out.println("Enter a positive number. Enter -1 to quit");
+        answer= scan.nextInt();
+        
+            if (answer >= 0) { // ignores negative inputs
+                for(int i = 2; i <= answer/2; i++){
+                  checkprime = answer % i;
+                     if(checkprime == 0){
+                      break; //stops loop if % returns a 0
+                    }
+                }
+            
+                if(checkprime == 0){
+                System.out.println("The number is not prime");
+                
+                }else
+                System.out.println("The number is prime");
+            }   
+            
+                if(answer == -1){ //finds max, min, total and count if -1 is inputted
+                    break;
+                }else{
+                    maximum = Math.max(maximum, answer);
+                    minimum = Math.min(minimum, answer);
+                    total += answer;
+                    count++;      
+                }
+                
+        } while(answer != -1);
+        //prints out max, min, total, count, and average
+        System.out.println("The maximum number is " + maximum);
+        System.out.println("The minimum number is " + minimum);
+        System.out.println("The total is " + total);
+        System.out.println("The count is " + count);
+        System.out.println("The average is " + (total/count));  
+    }
+} 
