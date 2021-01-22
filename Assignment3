@@ -1,0 +1,120 @@
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Assignment3.java
+// LAB: Tuesday @3PM
+// SPECIFICATION: Part 1: Exercises
+// FOR: CSE 110 - Assingment #3
+// TIME SPENT: 20 minutes
+//-----------------------------------------------------------*/
+
+// QUESTION 1
+//if (score >= 90) {
+//    grade = 'A';
+//    System.out.println(grade);
+//}else if (score >= 80 && score < 90){
+//     grade = 'B';
+//     System.out.println(grade);
+//}else if (score >= 70 && score < 80){
+//     grade = 'C';
+//     System.out.println(grade);
+//}else if(score >= 60 && score < 70){
+//     grade = 'D';
+//     System.out.println(grade);
+//}else if (score < 60) grade = 'F';{
+//}
+
+// QUESTION 2
+// switch(letter){
+//     case "A":
+//     case "a":
+//       System.out.println("Excellent");
+//       break;
+//     case "B":
+//     case "b":
+//       System.out.println("You can do better");
+//       break;
+//     case "C":
+//     case "c":
+//       System.out.println("Try harder");
+//       break;
+//     case "D":
+//     case "d":
+//       System.out.println("Try much harder");
+//       break;      
+//     default:
+//       System.out.println("Try another major");
+//    }  
+
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Assignment3.java
+// SPECIFICATION: Command prompt that repeats options using user entered string inputs until user chooses to terminate program 
+// FOR: CSE 110 - Assingment #3
+// TIME SPENT: 30 minutes
+//-----------------------------------------------------------*/
+import java.util.Scanner; //brings in scanner from java library
+public class Assignment3 {
+    public static void main(String[] args) {
+    String answer1 = ""; //declaring string variables needed
+    String answer2 = "";
+    String letter = "";
+    Scanner scan = new Scanner(System.in); 
+    
+    System.out.println("Please enter a string."); //asking and storing 1st string
+    answer1 = scan.nextLine();
+    System.out.println("Please enter another string.");//asking and storing 2nd string
+    answer2 = scan.nextLine();
+   
+    System.out.println("Command Options");
+    System.out.println("-----------------------------------");
+    System.out.println("a: find if the lengths of the strings are equal");
+    System.out.println("b: find if the two strings are the same");
+    System.out.println("c: find which string is lexically larger");
+    System.out.println("d: print the first character of each string");
+    System.out.println("e: concatenate the two strings");
+    System.out.println("f: print both strings in uppercase");
+    System.out.println("q: quit this program");
+    do { //adding do while loop to keep the program in a loop until case q is selected
+    System.out.println("Please enter an option or type:");
+    letter = scan.nextLine();
+     
+    switch (letter){ //switch statements for all the options
+        case "a": //length comparisions            
+            if((answer1.compareTo(answer2))== 0){               
+                System.out.println("The length of the string are equal");
+            } else {
+                System.out.println("The length of the string are not equal");     
+            }
+            break;
+        case "b": //are strings equal
+            if(answer1.equals(answer2)){
+                System.out.println("The strings are equal");
+            }else{
+                System.out.println("The strings are different");
+            }
+            break;
+        case "c"://which word is longer 
+            if((answer1.compareTo(answer2)) > 0){
+                System.out.println("The first string is lexically larger.");
+            }else if((answer1.compareTo(answer2)) < 0){
+                System.out.println("The second string is lexically larger.");
+            }
+            break;
+        case "d"://first letter in each word
+            System.out.println("The first character of the first string is " + answer1.substring(0,1));
+            System.out.println("The first character of the second string is " + answer2.substring(0,1));
+            break;        
+        case "e"://putting two words together without space
+            System.out.println("The concatenation of the two strings is " + answer1 + answer2);
+            break;
+        case "f"://prints both strings in uppercase          
+            System.out.println(answer1.toUpperCase());
+            System.out.println(answer2.toUpperCase());
+            break;
+        case "q"://quits the program
+            System.out.println("press any key to continue ..."); 
+            return;
+    }         
+    } while(letter != "q" );//keeps the loop running unless case q is selected
+}
+}
