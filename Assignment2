@@ -1,0 +1,73 @@
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Assignment2.java
+// LAB: Tuesday @3PM
+// SPECIFICATION: Part 1: Exercises
+// FOR: CSE 110 - Assingment #2
+// TIME SPENT: 20 minutes
+//-----------------------------------------------------------*/
+//Question #1: int length = myString.length();
+//             System.out.println(length);
+//Question #2: System.out.println("Index of character m is " + myString.indexOf('m'));
+//Question #3: System.out.println(myString.toUpperCase());
+//Question #4: myString = myString.substring(15,22);
+//             System.out.println(myString);
+//Question #5: a) true 
+//             b) false
+//             c) true
+//             d) true
+//Question #6: Hy
+
+/*-------------------------------------------------------------
+// AUTHOR: Sarnesh Arulnathan
+// FILENAME: Assignment2.java
+// SPECIFICATION: Rock paper scissors game in java
+// FOR: CSE 110 - Assingment #2
+// TIME SPENT: 40 minutes
+//-----------------------------------------------------------*/
+import java.util.Scanner;
+public class Assignment2 {
+    public static void main(String[] args) {
+        String player1, player2 = ""; //sets 2 string variables
+        Scanner scan = new Scanner(System.in); //Scanner class
+        
+        
+        System.out.println("Player 1: Choose rock, paper, or scissors"); //gets input value for player1
+        player1 = scan.next().toLowerCase();
+        System.out.println("Player 2: Choose rock, paper, or scissors"); //gets input value for player2
+        player2 = scan.next().toLowerCase();
+           if (player1.equals(player2)){ //case for if player1 has same pick as player2 is chosen
+               System.out.println("It is a tie");
+           }
+               if(player1.equals("rock")){ //compares rock to paper and scissors
+                   if (player2.equals("scissors"))
+                       System.out.println("Player 1 wins!");
+                       else if(player2.equals("paper")){
+                       System.out.println("Player 2 wins!");
+                     
+                       } else {                    
+                       System.out.println("Wrong choice!"); //case for if a word unknown is used
+                }           
+                }
+                if (player1.equals("paper")){ //compares paper to rock and scissors
+                     if (player2.equals("scissors"))
+                        System.out.println("Player 2 wins!");
+                        else if(player2.equals("rock")){
+                        System.out.println("Player 1 wins!");        
+                       
+                        } else {                    
+                        System.out.println("Wrong choice!");
+                }                         
+                }
+                if (player1.equals("scissors")){ //compares scissors to rock and paper
+                     if (player2.equals("paper")) 
+                        System.out.println("Player 1 wins!");
+                        else if(player2.equals("rock")){
+                        System.out.println("Player 2 wins!");
+                       
+                        } else {                    
+                        System.out.println("Wrong choice!");
+                }                            
+                }
+                                       
+    }
