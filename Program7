@@ -1,9 +1,5 @@
 /*-------------------------------------------------------------
 // AUTHOR: Sarnesh Arulnathan
-// FILENAME: Lab3.java
-// SPECIFICATION: Displays menu prompting user for numbers to do various arithematic functions
-// FOR: CSE 110- Lab #3
-// TIME SPENT: 30 minutes
 //-----------------------------------------------------------*/
 package lab3;
 import java.util.Scanner;
