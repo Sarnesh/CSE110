@@ -1,56 +1,7 @@
-/*-------------------------------------------------------------
-// AUTHOR: Sarnesh Arulnathan
-// FILENAME: Assignment3.java
-// LAB: Tuesday @3PM
-// SPECIFICATION: Part 1: Exercises
-// FOR: CSE 110 - Assingment #3
-// TIME SPENT: 20 minutes
-//-----------------------------------------------------------*/
-
-// QUESTION 1
-//if (score >= 90) {
-//    grade = 'A';
-//    System.out.println(grade);
-//}else if (score >= 80 && score < 90){
-//     grade = 'B';
-//     System.out.println(grade);
-//}else if (score >= 70 && score < 80){
-//     grade = 'C';
-//     System.out.println(grade);
-//}else if(score >= 60 && score < 70){
-//     grade = 'D';
-//     System.out.println(grade);
-//}else if (score < 60) grade = 'F';{
-//}
-
-// QUESTION 2
-// switch(letter){
-//     case "A":
-//     case "a":
-//       System.out.println("Excellent");
-//       break;
-//     case "B":
-//     case "b":
-//       System.out.println("You can do better");
-//       break;
-//     case "C":
-//     case "c":
-//       System.out.println("Try harder");
-//       break;
-//     case "D":
-//     case "d":
-//       System.out.println("Try much harder");
-//       break;      
-//     default:
-//       System.out.println("Try another major");
-//    }  
 
 /*-------------------------------------------------------------
 // AUTHOR: Sarnesh Arulnathan
-// FILENAME: Assignment3.java
 // SPECIFICATION: Command prompt that repeats options using user entered string inputs until user chooses to terminate program 
-// FOR: CSE 110 - Assingment #3
-// TIME SPENT: 30 minutes
 //-----------------------------------------------------------*/
 import java.util.Scanner; //brings in scanner from java library
 public class Assignment3 {
