@@ -1,9 +1,5 @@
 /*-------------------------------------------------------------
 // AUTHOR: Sarnesh Arulnathan
-// FILENAME: LAB1.java
-// SPECIFICATION: Takes name of client, returns name in capital letters and length of name, and a string comparision
-// FOR: CSE 110 - Lab #1
-// TIME SPENT: 20 minutes
 //-----------------------------------------------------------*/
 import java.util.Scanner;
 public class Lab1 {
