@@ -1,2 +1,4 @@
 # Java
-Class work - CSE110
+Contains various Java program
+
+*Use of code is prohibited without permission from owner*
