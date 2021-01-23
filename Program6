@@ -1,9 +1,5 @@
 /*-------------------------------------------------------------
 // AUTHOR: Sarnesh Arulnathan
-// FILENAME: Lab2.java
-// SPECIFICATION: Take a homework, midterm, and final grade to assess whether or not a student passed a class
-// FOR: CSE 110 - Lab #2
-// TIME SPENT: 40 minutes
 //-----------------------------------------------------------*/
 import java.util.Scanner;
 public class Lab2 {
