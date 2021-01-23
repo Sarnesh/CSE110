@@ -1,11 +1,5 @@
 /*-------------------------------------------------------------
 // AUTHOR: Sarnesh Arulnathan
-// FILENAME: Assignment4.java
-// LAB: Tuesday @3PM
-// SPECIFICATION: Part 2: Programming, checks if numbers are prime then adds,
-// subtracts, counts, does a summation, and returns an average of numbers.
-// FOR: CSE 110 - Assignment #4
-// TIME SPENT: 35 minutes
 //-----------------------------------------------------------*/
 import java.util.Scanner;
 public class Assignment4 {
