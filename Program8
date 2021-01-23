@@ -1,12 +1,5 @@
 /*-------------------------------------------------------------
 // AUTHOR: Sarnesh Arulnathan
-// FILENAME: Lab4.java
-// LAB: Tuesday @3PM
-// SPECIFICATION: Asks user for input on whether or not they want a pyrimid,
-// or a row of characters and builds it, unless q is typed which terminates the 
-// program
-// FOR: CSE 110 - Lab #4
-// TIME SPENT: 35 minutes
 //-----------------------------------------------------------*/
 import java.util.Scanner;
 public class Lab4 {
