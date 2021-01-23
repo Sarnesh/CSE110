@@ -1,29 +1,6 @@
-/*-------------------------------------------------------------
-// AUTHOR: Sarnesh Arulnathan
-// FILENAME: Assignment2.java
-// LAB: Tuesday @3PM
-// SPECIFICATION: Part 1: Exercises
-// FOR: CSE 110 - Assingment #2
-// TIME SPENT: 20 minutes
-//-----------------------------------------------------------*/
-//Question #1: int length = myString.length();
-//             System.out.println(length);
-//Question #2: System.out.println("Index of character m is " + myString.indexOf('m'));
-//Question #3: System.out.println(myString.toUpperCase());
-//Question #4: myString = myString.substring(15,22);
-//             System.out.println(myString);
-//Question #5: a) true 
-//             b) false
-//             c) true
-//             d) true
-//Question #6: Hy
 
 /*-------------------------------------------------------------
 // AUTHOR: Sarnesh Arulnathan
-// FILENAME: Assignment2.java
-// SPECIFICATION: Rock paper scissors game in java
-// FOR: CSE 110 - Assingment #2
-// TIME SPENT: 40 minutes
 //-----------------------------------------------------------*/
 import java.util.Scanner;
 public class Assignment2 {
